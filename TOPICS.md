@@ -11,9 +11,9 @@ many in Pakistan) and don't overlap existing posts.
 - [x] How to write an Upwork proposal that gets replies — 2026-10-15 — how-to-write-upwork-proposal
 - [x] Fiverr gig SEO: titles, descriptions and tags — 2026-10-15 — fiverr-gig-seo-guide
 - [x] How to invoice clients as a freelancer — 2026-10-15 — how-to-invoice-clients-as-a-freelancer
+- [x] Payoneer fees in Pakistan explained — 2026-10-16 — payoneer-fees-pakistan
 
 ## Backlog
-- [ ] Payoneer fees in Pakistan explained: receiving, withdrawal, conversion and the annual fee (tools: payoneer-to-pkr-calculator, wise-vs-payoneer-vs-bank)
 - [ ] Fiverr vs Upwork: which platform leaves freelancers with more money? (tools: fiverr-fee-calculator, upwork-fee-calculator)
 - [ ] How to file your income tax return as a freelancer in Pakistan (FBR IRIS, step by step) (tools: pakistan-freelancer-tax-calculator)
 - [ ] Proof of Remittance Certificate (PRC): what it is and how to get it from your bank (tools: pakistan-freelancer-tax-calculator, payoneer-to-pkr-calculator)

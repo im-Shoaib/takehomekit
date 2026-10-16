@@ -452,3 +452,88 @@ POSTS.append({
         ("What should I do if a client doesn't pay?", "Send polite reminders on the due date, at 7 days and at 14 days. Pause work if your agreement allows it, and keep all communication in writing."),
     ],
 })
+
+# ------------------------------------------------------------------ 7
+POSTS.append({
+    "slug": "payoneer-fees-pakistan", "image": "/assets/img/blog/payoneer-fees-pakistan", "alt": "Glass tiles with a wallet, coins and a bank icon on a dark gradient background",
+    "title": "Payoneer Fees in Pakistan Explained (2026): Every Charge, With Examples",
+    "h1": "Payoneer fees in Pakistan explained",
+    "desc": "Every Payoneer fee a Pakistani freelancer pays in 2026: receiving payments, withdrawing to PKR, the currency conversion fee, the annual account fee and transfers.",
+    "lede": "Payoneer rarely shows one big fee. Instead, small charges appear at different steps. Here's each one, what it costs on a real withdrawal, and how to pay less.",
+    "date": "2026-10-16", "cat": "Payments", "icon": "fx",
+    "tools": ["payoneer-to-pkr-calculator", "wise-vs-payoneer-vs-bank", "fiverr-fee-calculator"],
+    "body": takeaways([
+        "Payoneer charges at three points: when money <strong>arrives</strong>, when it's <strong>converted to PKR</strong>, and once a year if your account is <strong>low-volume</strong>.",
+        "Withdrawing to a PKR bank account costs a conversion fee — Payoneer's pricing lists a range, and around <strong>2%</strong> is typical. You see the exact rate before you confirm.",
+        "Since February 2026, the <strong>$29.95 annual fee</strong> applies if your account receives less than <strong>$6,000</strong> in 12 months (where the rule applies).",
+        "Fiverr's own <strong>$3 per withdrawal</strong> is separate and charged before the money reaches Payoneer.",
+    ]) + '''
+<h2>The short version</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>When it happens</th><th>Fee</th></tr></thead>
+<tbody>
+<tr><td>Payment from a marketplace (Fiverr, Upwork…)</td><td>Depends on the marketplace — check its payout terms</td></tr>
+<tr><td>Client pays you by bank transfer / ACH</td><td>1% (minimum $1)</td></tr>
+<tr><td>Client pays you by card</td><td>Up to 3.99% + $0.49</td></tr>
+<tr><td>Withdraw to a PKR bank account</td><td>Conversion fee, typically around 2%</td></tr>
+<tr><td>Payment from another Payoneer user</td><td>Free to receive</td></tr>
+<tr><td>Annual account fee</td><td>$29.95 if you receive under $6,000 in 12 months</td></tr>
+</tbody></table></div>
+<p class="hint">Based on Payoneer's published pricing and help centre at the time of writing. Your account's Fees page is the final word — Payoneer can set fees by country and account.</p>
+
+<h2>1. Fees for receiving money</h2>
+<h3>From Fiverr, Upwork and other marketplaces</h3>
+<p>When a marketplace pays you, the marketplace usually takes its own withdrawal fee first. Fiverr, for example, deducts a flat <strong>$3 per withdrawal</strong> before the money lands in Payoneer — whether you withdraw $50 or $1,000. Payoneer says its side of marketplace payouts varies by marketplace, so check the fee shown on your Payoneer transaction.</p>
+<h3>From direct clients</h3>
+<p>If a client pays you through a Payoneer payment request, the fee depends on how they pay:</p>
+<ul>
+<li><strong>Bank transfer or US ACH:</strong> 1%, with a $1 minimum. A $500 payment costs you $5.</li>
+<li><strong>Credit or debit card:</strong> up to 3.99% + $0.49. The same $500 could cost about $20.44.</li>
+</ul>
+<p>For direct clients, asking for a bank transfer instead of a card payment is the easiest saving in this whole article.</p>
+''' + cta("fiverr-fee-calculator", "What does your Fiverr order really pay?", "See Fiverr’s 20% fee, the $3 withdrawal and your take-home in PKR.", "Open Fiverr calculator") + '''
+<h2>2. The conversion fee when you withdraw to PKR</h2>
+<p>This is the fee most freelancers never notice, because it isn't shown as a separate line. When you withdraw dollars to a Pakistani bank account in rupees, Payoneer converts them at its own rate, which is below the mid-market rate you see on Google. The difference is the conversion fee.</p>
+<p>Payoneer's public pricing lists a range for withdrawals that involve conversion, and around <strong>2%</strong> is the commonly quoted figure for Pakistan. The good news: Payoneer shows the exact rate and rupee amount on the confirmation screen <em>before</em> you withdraw.</p>
+<p class="formula">Rupees received ≈ dollars withdrawn × mid-market rate × (1 − conversion fee)</p>
+''' + cta("payoneer-to-pkr-calculator", "Convert your balance to PKR", "Live mid-market rate, Payoneer’s conversion fee and the rupees that reach your bank.", "Open Payoneer to PKR") + '''
+<h3>Withdrawing in dollars instead</h3>
+<p>Some freelancers keep a USD account at a Pakistani bank to avoid Payoneer's conversion. Check the fee first: in 2025, Pakistani users reported a <strong>3% charge</strong> on withdrawals to non-PKR (foreign-currency) accounts and to third-party accounts. Payoneer's public pages don't list this separately, so confirm it on your account's Fees page — and remember your bank will apply its own rate when you later convert to rupees.</p>
+
+<h2>3. The annual account fee</h2>
+<p>Payoneer charges a <strong>$29.95</strong> annual account fee to low-volume accounts. From <strong>23 February 2026</strong>, in the countries where the new rule applies, the fee is charged if your account receives <strong>less than $6,000 in 12 months</strong> (the previous threshold was much lower). In other countries it applies only if the account has no transactions for 12 months.</p>
+<p>If you're just starting out and receive a few hundred dollars a year, $29.95 can be a large share of your earnings — factor it in when you compare payout options.</p>
+
+<h2>4. Payoneer-to-Payoneer transfers</h2>
+<p>Receiving money from another Payoneer user is free. Sending can cost up to $4 within the same country, and up to 1% plus up to $4 to another country, according to Payoneer's pricing page. Pakistani users reported extra charges on these transfers in 2025, so check the amount shown before you send.</p>
+
+<h2>Worked example: $1,000 from Fiverr to your bank</h2>
+<div class="table-wrap"><table><tbody>
+<tr><td>Withdrawn from your Fiverr balance</td><td class="num">$1,000.00</td></tr>
+<tr><td>Fiverr withdrawal fee</td><td class="num">−$3.00</td></tr>
+<tr><td>Arrives in Payoneer</td><td class="num">$997.00</td></tr>
+<tr><td>Value at mid-market (Rs 277)</td><td class="num">Rs 2,76,169</td></tr>
+<tr><td>Conversion fee (about 2%)</td><td class="num">−Rs 5,523</td></tr>
+<tr><th>Reaches your bank</th><th class="num">≈ Rs 2,70,646</th></tr>
+</tbody></table></div>
+<p>Rates move daily; the calculators use today's rate. Your bank may also deduct tax on the remittance — see our <a href="/blog/pseb-registration-freelancers-tax-pakistan/">PSEB guide</a> for how to keep that at 0.25%.</p>
+
+<h2>Six ways to pay Payoneer less</h2>
+<ul>
+<li><strong>Withdraw in larger, less frequent amounts.</strong> Fixed fees like Fiverr's $3 shrink as a share of bigger withdrawals.</li>
+<li><strong>Check the rate on the confirmation screen.</strong> If you're not in a hurry and the rate looks poor, wait a day.</li>
+<li><strong>Ask direct clients for bank transfers, not cards.</strong> 1% versus up to 3.99% + $0.49.</li>
+<li><strong>Know whether the annual fee applies to you.</strong> If you receive less than $6,000 a year, include $29.95 in your costs.</li>
+<li><strong>Compare routes once in a while.</strong> Fees change; a quick comparison tells you whether Payoneer is still your cheapest option.</li>
+<li><strong>Read the Fees page in your account.</strong> It's updated before changes take effect and is the only figure that's guaranteed for your account.</li>
+</ul>
+''' + cta("wise-vs-payoneer-vs-bank", "Is Payoneer still your cheapest route?", "Compare Payoneer, Wise and a bank wire side by side with your own fees.", "Compare routes") + '''
+<p class="hint">Sources checked for this guide: Payoneer's pricing page and help centre (annual account fee), and reporting on Payoneer's 2025 fee changes for Pakistan by The Express Tribune. Fees can change at any time — confirm in your account before relying on them.</p>
+''',
+    "faq": [
+        ("How much does Payoneer charge to withdraw to a Pakistani bank?", "Withdrawing in PKR costs a currency conversion fee built into the exchange rate — around 2% is typical. Payoneer shows the exact rate and rupee amount before you confirm."),
+        ("What is Payoneer's annual fee in 2026?", "$29.95. Since 23 February 2026, in countries where the new rule applies, it's charged if your account receives less than $6,000 in 12 months."),
+        ("Does Payoneer charge for receiving money from Fiverr?", "Fiverr deducts its own $3 per withdrawal. Payoneer says its fee for marketplace payouts varies by marketplace, so check the transaction details in your account."),
+        ("Is it cheaper to withdraw in USD?", "Not always. Pakistani users reported a 3% fee on withdrawals to foreign-currency accounts in 2025, and your bank applies its own rate when you convert. Compare both before switching."),
+    ],
+})

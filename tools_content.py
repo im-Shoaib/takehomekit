@@ -284,7 +284,7 @@ TOOLS.append({
 <h2>Other Payoneer fees to know</h2>
 <ul>
 <li><strong>Receiving fees.</strong> Payments from clients via a Payoneer payment request typically cost 1% by bank transfer and 3% by card. Marketplace payouts from Fiverr or Upwork are charged by the marketplace instead (see the <a href="/fiverr-fee-calculator/">Fiverr</a> and <a href="/upwork-fee-calculator/">Upwork</a> calculators).</li>
-<li><strong>Annual account fee.</strong> Payoneer charges $29.95 a year if your account receives less than $2,000 in 12 months.</li>
+<li><strong>Annual account fee.</strong> Since February 2026, Payoneer charges $29.95 if your account receives less than $6,000 in 12 months (in the countries where this rule applies). Your account's Fees page shows whether it applies to you.</li>
 <li><strong>2025 changes for Pakistan.</strong> Payoneer revised several fees for Pakistani accounts in 2025, including charges on Payoneer-to-Payoneer transfers and withdrawals to foreign-currency accounts. Check the Fees page inside your account for your exact rates.</li>
 </ul>
 
