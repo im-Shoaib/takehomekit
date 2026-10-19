@@ -537,3 +537,97 @@ POSTS.append({
         ("Is it cheaper to withdraw in USD?", "Not always. Pakistani users reported a 3% fee on withdrawals to foreign-currency accounts in 2025, and your bank applies its own rate when you convert. Compare both before switching."),
     ],
 })
+
+# ------------------------------------------------------------------ 8
+POSTS.append({
+    "slug": "fiverr-vs-upwork-fees-take-home", "image": "/assets/img/blog/fiverr-vs-upwork-fees-take-home", "alt": "Glass tiles with a balance scale between a briefcase and a wallet on a dark gradient background",
+    "title": "Fiverr vs Upwork Fees (2026): Which Leaves You More Money?",
+    "h1": "Fiverr vs Upwork: which platform leaves you more money?",
+    "desc": "Fiverr vs Upwork fees in 2026 compared on real jobs: service fees, Connects, withdrawals and payout times, plus a break-even rule for Pakistani freelancers.",
+    "lede": "Fiverr takes a flat 20%. Upwork takes 0–15% but charges you to apply. Which one leaves more in your pocket depends on your job size and how many proposals you send. Here's the maths.",
+    "date": "2026-10-19", "cat": "Payments", "icon": "scale",
+    "tools": ["fiverr-fee-calculator", "upwork-fee-calculator", "fiverr-reverse-fee-calculator", "payoneer-to-pkr-calculator"],
+    "body": takeaways([
+        "Fiverr keeps a flat <strong>20%</strong> of every order and charges <strong>$3 per withdrawal</strong> (per withdrawal, not per order). Winning work costs nothing extra.",
+        "Upwork keeps a <strong>variable 0–15%</strong> per contract, shown before you apply, but every proposal costs <strong>Connects</strong> at $0.15 each.",
+        "On a single job Upwork's lower fee usually wins on <strong>bigger projects</strong>; Connects can make Upwork the more expensive platform on <strong>small jobs</strong>.",
+        "Upwork releases money faster (5 days after a fixed-price milestone is approved) than Fiverr's 14-day clearance for most sellers.",
+    ]) + '''
+<h2>The fees side by side</h2>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th>Fiverr</th><th>Upwork</th></tr></thead>
+<tbody>
+<tr><td>Service fee on your earnings</td><td>Flat 20% (including tips and extras)</td><td>0–15%, set per contract and shown before you apply</td></tr>
+<tr><td>Cost to win work</td><td>None — buyers find your gig</td><td>Connects, $0.15 each; 10 free per month on the Basic plan</td></tr>
+<tr><td>Withdrawal from Pakistan</td><td>Through Payoneer, $3 per withdrawal</td><td>Direct to Local Bank (PKR) $0.99, Payoneer (small fee shown in your account) or USD wire $50</td></tr>
+<tr><td>When money becomes available</td><td>14 days after completion (7 days for Seller Plus, Top Rated and Pro)</td><td>Fixed price: 5 days after milestone approval. Hourly: about 10 days after the work week ends</td></tr>
+<tr><td>Optional membership</td><td>—</td><td>Freelancer Plus, $19.99/month with 100 Connects</td></tr>
+</tbody></table></div>
+<p class="hint">Checked on 19 October 2026 against Fiverr's and Upwork's help centres. Fees change — confirm on each platform before you rely on them.</p>
+<p>Clients pay their own fees on both platforms (Fiverr buyers pay a 5.5% service fee, for example). Those don't come out of your earnings, but they do affect how price-sensitive your clients are.</p>
+
+<h2>How Fiverr's fees work</h2>
+<p>Fiverr is the simplest to calculate. Whatever the order value — $5 or $5,000 — Fiverr keeps 20% and you keep 80%. Your seller level doesn't change the rate.</p>
+<p>After the order clears, you withdraw. In Pakistan, Fiverr pays out through <strong>Payoneer</strong>, and Fiverr charges a flat <strong>$3 per withdrawal</strong>, whatever the amount. Withdraw ten orders together and you pay $3 once, not ten times. Payoneer then converts your dollars to rupees at a rate typically around 2% below mid-market — see our <a href="/blog/payoneer-fees-pakistan/">Payoneer fees guide</a>.</p>
+<p class="formula">Fiverr take-home = order value × 0.80 − $3 per withdrawal</p>
+''' + cta("fiverr-fee-calculator", "Check a Fiverr order", "Enter your gig price to see the 20% fee, the $3 withdrawal and your take-home in PKR.", "Open Fiverr calculator") + '''
+<h2>How Upwork's fees work</h2>
+<p>Since May 2025, Upwork charges a <strong>variable freelancer service fee between 0% and 15%</strong>. The rate depends on factors such as the job and your history with the client. Upwork shows it before you submit a proposal, and it stays fixed for that contract, bonuses included.</p>
+<p>The cost Fiverr doesn't have is <strong>Connects</strong>. Every proposal uses some, the number is shown on each job post, and they cost $0.15 each (sold in bundles of at least 10). Basic accounts get 10 free Connects a month; Freelancer Plus costs $19.99 a month and includes 100.</p>
+<p>Withdrawing to Pakistan is cheap: Upwork's <strong>Direct to Local Bank</strong> option supports PKR accounts for $0.99 per withdrawal (personal accounts only — Upwork says it can't accept company registrations for PKR accounts). You can also withdraw to Payoneer, or by USD wire for $50. Upwork's banking provider sets the PKR exchange rate and doesn't publish its margin, so compare the quoted rupee amount with the mid-market rate before confirming.</p>
+<p class="formula">Upwork take-home = payment × (1 − service fee) − Connects spent × $0.15 − withdrawal fee</p>
+
+<h2>Worked example: a $500 project</h2>
+<p>Assume you send 10 proposals at 15 Connects each to win one $500 job on Upwork. That's 150 Connects, or <strong>$22.50</strong>. On Fiverr, assume the order came to your gig and you withdraw it on its own.</p>
+<div class="table-wrap"><table>
+<thead><tr><th></th><th class="num">Fiverr</th><th class="num">Upwork at 10%</th><th class="num">Upwork at 15%</th></tr></thead>
+<tbody>
+<tr><td>Job value</td><td class="num">$500.00</td><td class="num">$500.00</td><td class="num">$500.00</td></tr>
+<tr><td>Service fee</td><td class="num">−$100.00</td><td class="num">−$50.00</td><td class="num">−$75.00</td></tr>
+<tr><td>Cost to win the job</td><td class="num">$0.00</td><td class="num">−$22.50</td><td class="num">−$22.50</td></tr>
+<tr><td>Withdrawal</td><td class="num">−$3.00</td><td class="num">−$0.99</td><td class="num">−$0.99</td></tr>
+<tr><th>You keep (before conversion)</th><th class="num">$397.00</th><th class="num">$426.51</th><th class="num">$401.51</th></tr>
+</tbody></table></div>
+<p>At a 10% fee, Upwork leaves you about $30 more. At 15%, the gap almost disappears. Your own numbers will differ — the Connects figure is an example, not an average.</p>
+
+<h2>Worked example: a $50 job</h2>
+<p>Small jobs flip the result. With the same 150 Connects spent to win a $50 job:</p>
+<ul>
+<li><strong>Fiverr:</strong> $50 − $10 fee − $3 withdrawal = <strong>$37.00</strong> (and less than $3 of fee per order if you batch withdrawals).</li>
+<li><strong>Upwork at 10%:</strong> $50 − $5 fee − $22.50 Connects − $0.99 = <strong>$21.51</strong>.</li>
+</ul>
+<p>The fee rate matters less than the cost of winning the work. That's why many freelancers use Upwork for larger projects and Fiverr for small, repeatable services.</p>
+''' + cta("upwork-fee-calculator", "Check an Upwork contract", "Set the service fee shown on the job, add your Connects and withdrawal method, and see your take-home.", "Open Upwork calculator") + '''
+<h2>A simple break-even rule</h2>
+<p>Upwork leaves you more than Fiverr on a job when:</p>
+<p class="formula">job value × (20% − Upwork fee) &gt; Connects cost + Upwork withdrawal fee − $3</p>
+<p>With $22.50 of Connects and a $0.99 withdrawal, that works out to:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Upwork service fee</th><th class="num">Upwork wins above about</th></tr></thead>
+<tbody>
+<tr><td>5%</td><td class="num">$137</td></tr>
+<tr><td>10%</td><td class="num">$205</td></tr>
+<tr><td>15%</td><td class="num">$410</td></tr>
+</tbody></table></div>
+<p>Spend fewer Connects per win — because your proposals are sharper — and those thresholds fall fast. Our guide to <a href="/blog/how-to-write-upwork-proposal/">writing Upwork proposals that get replies</a> helps with exactly that.</p>
+
+<h2>It's not only about fees</h2>
+<ul>
+<li><strong>Cash flow.</strong> Upwork's 5-day security period on fixed-price milestones gets money to you faster than Fiverr's 14-day clearance, unless you're Seller Plus, Top Rated or Pro on Fiverr (7 days).</li>
+<li><strong>Effort to get work.</strong> On Fiverr, buyers come to your gig, so your time goes into gig SEO and delivery. On Upwork, you spend time writing proposals — time that has a cost even when the Connects are free.</li>
+<li><strong>Project size.</strong> Long, custom or hourly projects fit Upwork's contract model. Packaged, fixed-scope services fit Fiverr's gig model.</li>
+<li><strong>Exchange rate.</strong> Fiverr money reaches you through Payoneer's rate; Upwork's Direct to Local Bank uses its provider's rate. Compare the rupee amount each one quotes for the same dollars.</li>
+</ul>
+''' + cta("fiverr-reverse-fee-calculator", "Price to keep what you need", "Work back from the amount you want to keep to the price you should quote on either platform.", "Open reverse calculator") + '''
+<h2>So which one should you choose?</h2>
+<p>If most of your work is under about $200 and buyers can order it as a package, Fiverr usually leaves you more money and less admin. If you take on larger custom projects, or you can win work with few proposals, Upwork's lower fee usually wins. Plenty of freelancers run both: the fees are only one part of the decision, and both platforms let you raise your price to cover them.</p>
+<p class="hint">Sources checked for this guide: Fiverr Help Center (order process and clearance, buyer service fees), Upwork Help Center (how to get paid, Direct to Local Bank fees, wire transfers, Payoneer withdrawals) and Upwork's pricing page. The $3 per-withdrawal Fiverr fee in Pakistan is as confirmed for this site. Fees can change at any time.</p>
+''',
+    "faq": [
+        ("Does Fiverr or Upwork take a bigger cut?", "Fiverr takes a flat 20%. Upwork takes 0–15% depending on the contract, but you also pay for Connects to send proposals, so on small jobs Upwork can cost more overall."),
+        ("How much does it cost to withdraw from Upwork to Pakistan?", "Direct to Local Bank to a personal PKR account costs $0.99 per withdrawal. A USD wire costs $50. Payoneer withdrawals carry a small Upwork fee shown in your account, plus Payoneer's conversion."),
+        ("Is the Fiverr $3 withdrawal fee charged on every order?", "No. It's $3 per withdrawal, whatever the amount. Withdrawing several orders together means you pay it once."),
+        ("Which platform pays faster?", "Upwork releases fixed-price earnings five days after the client approves a milestone. Fiverr holds earnings for 14 days after an order completes, or 7 days for Seller Plus, Top Rated and Pro sellers."),
+        ("Are Upwork Connects worth buying?", "Only if your proposals win often enough. Divide the Connects you spend by the jobs you win to find your real cost per job, and include it when you compare platforms."),
+    ],
+})

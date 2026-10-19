@@ -149,7 +149,7 @@ TOOLS.append({
 <p class="hint">Upwork shows this rate before you submit a proposal, and it stays fixed for the contract.</p></div>
 <div class="row"><div class="field"><label for="connects">Connects used</label><input class="input" id="connects" name="connects" inputmode="numeric" value="0"><p class="hint">$0.15 each</p></div>
 <div class="field"><label for="wd">Withdrawal method</label><select class="input" id="wd" name="wd">
-<option value="0.99">Direct to local bank ($0.99)</option><option value="2">Payoneer ($2)</option><option value="30">Wire transfer ($30)</option><option value="0">No withdrawal yet</option><option value="custom">Other amount…</option></select></div></div>
+<option value="0.99">Direct to local bank ($0.99)</option><option value="2">Payoneer ($2)</option><option value="50">Wire transfer ($50)</option><option value="0">No withdrawal yet</option><option value="custom">Other amount…</option></select></div></div>
 <div id="wd-custom" hidden>''' + money_field("wdc", "wdc", "Withdrawal fee", 0) + '''</div>
 <div class="row"><div class="field"><label for="cur">Also show in</label><select class="input" id="cur" name="cur"></select></div>
 ''' + pct_field("conv", "conv", "Conversion spread", 2) + '''</div>
