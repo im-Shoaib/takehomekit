@@ -289,7 +289,7 @@ TOOLS.append({
 </ul>
 
 <h2>Getting the exact number</h2>
-<p>Before you confirm a withdrawal, Payoneer shows the exact rate. Type that into “Exchange rate” and set the conversion fee to 0% to get a precise rupee figure. Keep your <strong>Proof of Remittance Certificate (PRC)</strong> from the bank — it documents your income as an IT export for tax purposes.</p>''',
+<p>Before you confirm a withdrawal, Payoneer shows the exact rate. Type that into “Exchange rate” and set the conversion fee to 0% to get a precise rupee figure. Keep your <strong>Proceeds Realisation Certificate (PRC)</strong> from the bank — it documents your income as an IT export for tax purposes.</p>''',
     "faq": [
         ("What rate does Payoneer use for PKR?", "Payoneer converts at its own rate, which is up to about 2% below the mid-market rate. The calculator applies that spread to today's live rate. For an exact figure, enter the rate Payoneer shows on the withdrawal screen."),
         ("How much is $100 from Payoneer in Pakistani rupees?", "At a mid-market rate of Rs 277 and a 2% spread, about Rs 27,146. Rates move daily, so use the calculator above for today's figure."),
@@ -561,7 +561,7 @@ TOOLS.append({
 </ul>
 
 <h2>Do I need an invoice if I work on Fiverr or Upwork?</h2>
-<p>Not for the platform — Fiverr and Upwork generate their own records. But you need invoices for <strong>direct clients</strong>, for clients who ask for one for their accounts, and for your own tax records. If you're in Pakistan and receive payments through Payoneer or a bank, matching invoices alongside your bank's Proof of Remittance Certificate make it easy to show your income is IT export.</p>
+<p>Not for the platform — Fiverr and Upwork generate their own records. But you need invoices for <strong>direct clients</strong>, for clients who ask for one for their accounts, and for your own tax records. If you're in Pakistan and receive payments through Payoneer or a bank, matching invoices alongside your bank's Proceeds Realisation Certificate make it easy to show your income is IT export.</p>
 
 <h2>Private by default</h2>
 <p>Everything you type stays in your browser's storage on this device. Nothing is uploaded, and the PDF is created on your device. Clearing your browser data removes it.</p>''',

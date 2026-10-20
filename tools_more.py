@@ -103,7 +103,7 @@ TOOLS.append({
 <ul>
 <li><strong>Availability.</strong> Wise doesn't offer accounts to residents of every country, and not every marketplace pays into every provider. Check what works for you before comparing.</li>
 <li><strong>Speed.</strong> Local bank withdrawals through Payoneer usually take one to three business days; SWIFT wires can take longer.</li>
-<li><strong>Proof of income.</strong> In Pakistan, keep the bank's Proof of Remittance Certificate for each transfer. It supports the reduced tax rate on IT exports — see the <a href="/pakistan-freelancer-tax-calculator/">Pakistan freelancer tax calculator</a>.</li>
+<li><strong>Proof of income.</strong> In Pakistan, keep the bank's Proceeds Realisation Certificate for each transfer. It supports the reduced tax rate on IT exports — see the <a href="/pakistan-freelancer-tax-calculator/">Pakistan freelancer tax calculator</a>.</li>
 </ul>''',
     "faq": [
         ("Is Wise cheaper than Payoneer for PKR?", "Often, when Wise is available to you: Wise converts at the mid-market rate and charges a small visible fee, while Payoneer's spread is up to about 2%. Enter the fees you actually see to compare."),
@@ -422,7 +422,7 @@ TOOLS.append({
 <ul>
 <li><strong>File your income tax return</strong> and stay on the Active Taxpayers List (ATL).</li>
 <li>File withholding statements, if they apply to you.</li>
-<li>Bring the money in through banking channels and keep the bank's <strong>Proof of Remittance Certificate (PRC)</strong> for each transfer.</li>
+<li>Bring the money in through banking channels and keep the bank's <strong>Proceeds Realisation Certificate (PRC)</strong> for each transfer.</li>
 <li>Don't claim a credit for foreign taxes paid on the same income.</li>
 </ul>
 <p>If the conditions aren't met, the final-tax treatment doesn't apply and the income can be taxed at normal individual slab rates, which are much higher. Filing your return on time is the biggest saving available.</p>
@@ -434,7 +434,7 @@ TOOLS.append({
         ("How much tax do freelancers pay in Pakistan?", "For IT and IT-enabled service exports, a final tax of 0.25% on foreign remittances if you're registered with PSEB, or 1% if you're not — provided you file your return and meet the conditions."),
         ("How do I register with PSEB as a freelancer?", "Through the Pakistan Software Export Board's online registration for freelancers. Registration is renewed periodically; check pseb.org.pk for the current process and fee."),
         ("What if I'm not a filer?", "The reduced final-tax regime requires a filed return. Non-filers can lose the concession and be taxed at normal rates, so filing is the first thing to do."),
-        ("Is the tax deducted automatically?", "Usually your bank deducts it when the remittance is received through banking channels. Keep each Proof of Remittance Certificate for your return."),
+        ("Is the tax deducted automatically?", "Usually your bank deducts it when the remittance is received through banking channels. Keep each Proceeds Realisation Certificate for your return."),
         ("Is this tax advice?", "No. It's an estimate based on published rates. Rules change with each budget — confirm with FBR or a tax adviser."),
     ],
 })
