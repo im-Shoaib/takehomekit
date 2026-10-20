@@ -21,6 +21,13 @@ TOOLS.sort(key=lambda t: CAT_ORDER.index(t["cat"]))
 BY_SLUG = {t["slug"]: t for t in TOOLS}
 POSTS.sort(key=lambda p: p["date"], reverse=True)
 
+# Scheduled publishing: posts dated in the future (Pakistan time) are left out of the build.
+# Override for testing with BUILD_DATE=YYYY-MM-DD.
+import datetime as _dt
+PUBLISH_DATE = os.environ.get("BUILD_DATE") or (_dt.datetime.now(_dt.timezone.utc) + _dt.timedelta(hours=5)).date().isoformat()
+SCHEDULED = sorted((p for p in POSTS if p["date"] > PUBLISH_DATE), key=lambda p: p["date"])
+POSTS[:] = [p for p in POSTS if p["date"] <= PUBLISH_DATE]
+
 
 def human_date(d):
     import datetime
@@ -445,7 +452,14 @@ def main():
         "background_color": "#0a0918", "theme_color": "#0a0918",
         "icons": [{"src": "/assets/img/icon-192.png", "sizes": "192x192", "type": "image/png"},
                   {"src": "/assets/img/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, indent=2))
-    print("Built", len(TOOLS), "tools and", len(POSTS), "posts into", os.path.abspath(OUT))
+    import shutil
+    for q in SCHEDULED:  # never leave a page online for a post that is now scheduled for later
+        d = os.path.join(OUT, "blog", q["slug"])
+        if os.path.isdir(d):
+            shutil.rmtree(d)
+    print("Built", len(TOOLS), "tools and", len(POSTS), "posts into", os.path.abspath(OUT), "| date", PUBLISH_DATE)
+    if SCHEDULED:
+        print(f"{len(SCHEDULED)} scheduled; next: {SCHEDULED[0]['date']} {SCHEDULED[0]['slug']}")
 
 
 if __name__ == "__main__":
