@@ -1,0 +1,51 @@
+# Publishes scheduled blog posts. Every morning it rebuilds the site from the
+# `source` branch; posts whose date (Pakistan time) has arrived go live.
+name: Scheduled publish
+
+on:
+  schedule:
+    - cron: "7 3 * * *"   # 03:07 UTC = 08:07 Pakistan time, every day
+  workflow_dispatch:       # "Run workflow" button in the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scheduled-publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the live site (main)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - name: Check out the generator (source)
+        uses: actions/checkout@v4
+        with:
+          ref: source
+          path: src
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build the site
+        run: SITE_OUT="$GITHUB_WORKSPACE/site" python src/build.py
+
+      - name: Commit and push if a post went live
+        working-directory: site
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to publish today."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Scheduled publish $(TZ=Asia/Karachi date +%F)"
+          git push
