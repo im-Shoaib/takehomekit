@@ -247,8 +247,8 @@ TOOLS.append({
 TOOLS.append({
     "slug": "payoneer-to-pkr-calculator", "popular": True, "js": "payoneer", "cat": "payments", "icon": I["bank"],
     "short": "Payoneer to PKR calculator", "blurb": "What your Payoneer dollars become in your bank.",
-    "title": "Payoneer to PKR Calculator — Live Rate, Fees & Amount Received",
-    "desc": "Convert Payoneer USD, EUR or GBP to PKR with live rates. Includes Payoneer's conversion fee, receiving fees and bank withholding tax. Also works for INR, BDT, PHP and NGN.",
+    "title": "Payoneer to PKR Calculator — Today's Dollar Rate & Fees",
+    "desc": "Payoneer dollar rate today in Pakistan: live USD, GBP and EUR to PKR with Payoneer's conversion fee, and a calculator for the rupees that reach your bank.",
     "h1": "Payoneer to PKR calculator",
     "lede": "See how many rupees reach your bank when you withdraw from Payoneer. Uses the live mid-market rate and subtracts Payoneer's conversion spread — or type in the exact rate Payoneer shows you.",
     "related": ["freelancer-currency-converter", "fiverr-fee-calculator", "upwork-fee-calculator", "fiverr-reverse-fee-calculator"],
@@ -264,7 +264,18 @@ TOOLS.append({
 <div class="row">''' + money_field("flat", "flat", "Flat withdrawal fee", 0, "In the source currency") + pct_field("wht", "wht", "Bank withholding tax", 0, "Only if your bank deducts it") + '''</div>
 </details>
 </form>''' + OUT_SLIP,
-    "content": '''<h2>How Payoneer converts your dollars to rupees</h2>
+    "content": '''<h2>Payoneer dollar rate today (USD to PKR)</h2>
+<p>This table uses today's live mid-market rate and Payoneer's usual conversion spread of about 2% to estimate the Payoneer rate for withdrawals to a Pakistani bank. Payoneer shows its exact rate on the withdrawal screen before you confirm.</p>
+<div class="table-wrap"><table id="rate-today">
+<thead><tr><th>Currency</th><th class="num">Mid-market rate</th><th class="num">Estimated Payoneer rate</th><th class="num">100 becomes</th></tr></thead>
+<tbody>
+<tr data-cur="USD"><td>US dollar (USD)</td><td class="num">…</td><td class="num">…</td><td class="num">…</td></tr>
+<tr data-cur="GBP"><td>British pound (GBP)</td><td class="num">…</td><td class="num">…</td><td class="num">…</td></tr>
+<tr data-cur="EUR"><td>Euro (EUR)</td><td class="num">…</td><td class="num">…</td><td class="num">…</td></tr>
+</tbody></table></div>
+<p class="hint" id="rate-today-note">Rates load in your browser from a public exchange-rate feed and refresh during the day.</p>
+
+<h2>How Payoneer converts your dollars to rupees</h2>
 <p>When you withdraw USD, EUR or GBP from Payoneer to a bank account in Pakistan, Payoneer converts it to PKR. It doesn't list this as a separate line — instead, the rate you get is <strong>up to about 2% below the mid-market rate</strong> (the rate you see on Google). That gap is the conversion fee.</p>
 <p>For example, if the mid-market rate is Rs 277 per dollar, a 2% spread gives you about Rs 271.46. On a $1,000 withdrawal that's roughly Rs 5,540 you never see itemised.</p>
 <p class="formula">Rupees received = amount × mid-market rate × (1 − conversion fee %) − any bank tax</p>
@@ -291,6 +302,7 @@ TOOLS.append({
 <h2>Getting the exact number</h2>
 <p>Before you confirm a withdrawal, Payoneer shows the exact rate. Type that into “Exchange rate” and set the conversion fee to 0% to get a precise rupee figure. Keep your <strong>Proceeds Realisation Certificate (PRC)</strong> from the bank — it documents your income as an IT export for tax purposes.</p>''',
     "faq": [
+        ("What is the Payoneer dollar rate today?", "The table at the top of this page shows today's mid-market USD to PKR rate and an estimated Payoneer rate about 2% lower. Payoneer's exact rate appears on the withdrawal screen before you confirm."),
         ("What rate does Payoneer use for PKR?", "Payoneer converts at its own rate, which is up to about 2% below the mid-market rate. The calculator applies that spread to today's live rate. For an exact figure, enter the rate Payoneer shows on the withdrawal screen."),
         ("How much is $100 from Payoneer in Pakistani rupees?", "At a mid-market rate of Rs 277 and a 2% spread, about Rs 27,146. Rates move daily, so use the calculator above for today's figure."),
         ("Can I avoid Payoneer's conversion fee?", "If you hold a USD account at a Pakistani bank, you can withdraw in dollars for a flat fee instead of converting. Your bank then converts when you need rupees, at its own rate — so compare both before choosing."),

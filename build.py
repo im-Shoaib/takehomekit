@@ -13,7 +13,7 @@ GA_ID = "G-51743TY2ER"                   # <-- Google Analytics 4 Measurement ID
 OUT = os.environ.get("SITE_OUT", os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "takehome"))
 TODAY = "2026-10-15"
 UPDATED_HUMAN = "October 2026"
-VERSION = "20261015i"
+VERSION = "20261111a"
 
 e = html.escape
 CAT_ORDER = [c["id"] for c in CATEGORIES]
