@@ -57,3 +57,24 @@
   update();
   TH.getRates().then(function (info) { rates = info.rates; TH.rateStatus(statusEl, info); syncRate(); update(); });
 })();
+
+(function () {
+  'use strict';
+  var t = document.getElementById('rate-today');
+  if (!t || !window.TH) return;
+  var note = document.getElementById('rate-today-note');
+  TH.getRates().then(function (info) {
+    var rows = t.querySelectorAll('tr[data-cur]');
+    for (var i = 0; i < rows.length; i++) {
+      var cur = rows[i].getAttribute('data-cur');
+      var mid = TH.convert(info.rates, 1, cur, 'PKR');
+      if (!mid) continue;
+      var est = mid * 0.98;
+      var c = rows[i].querySelectorAll('td');
+      c[1].textContent = 'Rs ' + mid.toFixed(2);
+      c[2].textContent = 'Rs ' + est.toFixed(2);
+      c[3].textContent = TH.money(est * 100, 'PKR');
+    }
+    if (note) note.textContent = (info.live ? 'Live rates' : 'Last saved rates') + ' dated ' + info.date + '. Estimated Payoneer rate = mid-market minus 2%. Payoneer shows its exact rate before you confirm a withdrawal.';
+  });
+})();
